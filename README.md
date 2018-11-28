@@ -1,2 +1,2 @@
-# utilFun
-This repository contains NPM Utility Module
+# This package consist of util functions.
+ 
