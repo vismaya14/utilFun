@@ -12,7 +12,6 @@ class DNSLookup {
      */
     async resolve(configKey) {
         try {
-            console.log(this.leadCode);
             const configVal = process.env[configKey];
             const address = await this.resolveSrv(configVal);
             return {
