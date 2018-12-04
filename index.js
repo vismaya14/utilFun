@@ -1,7 +1,9 @@
 const jwt = require("./JwtMiddleware");
-const awsDNSLookup = require("./DNSLookup");
+const DNSLookup = require("./DNSLookup");
+const dnsLookup = new DNSLookup();
 
 module.exports = {
     jwt: jwt.jwtMiddleware,
-    awsDNSLookup: awsDNSLookup
+    resolveHttp: dnsLookup.resolveHttp,
+    resolveSrv: dnsLookup.resolveSrv
 };

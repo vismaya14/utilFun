@@ -3,6 +3,6 @@ const JwtException = require('./jwtException');
 exports.InvalidTokenException = class InvalidTokenException extends JwtException {
 
     constructor(message) {
-        super(message, 402);
+        super(message, 403);
     }
 }
